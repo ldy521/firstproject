@@ -29,6 +29,7 @@
 <hr>
 <form method="POST" action="/post/comment/">
     {% csrf_token %}
+    <!-- 隐藏与放post_id -->
     <input type="hidden" name="post_id" value="{{post.id}}"><br>
     <textarea name="content" rows="3"></textarea><br>
     <input type="submit" name="发表评论">

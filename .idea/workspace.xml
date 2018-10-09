@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b09a3f5f-4469-4a6f-a72b-dd33cdb29c6f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/templates/blockers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/templates/create_post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/templates/edit_post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/templates/post_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/templates/read_post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/templates/tag_filter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/templates/top10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statics/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statics/img/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bbs/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bbs/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bbs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bbs/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/post/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/templates/read_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/post/templates/read_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/post/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/post/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="149">
+              <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -52,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read_post.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="read_post.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/post/templates/read_post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="135">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -93,8 +79,8 @@
         <option value="$PROJECT_DIR$/post/models.py" />
         <option value="$PROJECT_DIR$/bbs/urls.py" />
         <option value="$PROJECT_DIR$/bbs/settings.py" />
-        <option value="$PROJECT_DIR$/post/views.py" />
         <option value="$PROJECT_DIR$/post/templates/read_post.html" />
+        <option value="$PROJECT_DIR$/post/views.py" />
       </list>
     </option>
   </component>
@@ -285,20 +271,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/post/views.py">
+    <entry file="file://$PROJECT_DIR$/post/templates/read_post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/post/templates/read_post.html">
+    <entry file="file://$PROJECT_DIR$/post/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="149">
+          <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

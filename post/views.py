@@ -13,7 +13,19 @@ def create_post(request):
 
 
 def edit_post(request):
-    return render(request, 'edit_post.html', {})
+    if request.method =='POST':
+        # 找到需要修改的那一条数据
+        post_id = int(request.POST.get('post_id'))
+        post = Post.objects.get(pk=post_id)
+        # 修改内容并保存
+        post.title = request.POST.get('title')
+        post.content = request.POST.get('content')
+        post.save()
+        return redirect('/post/read/?post_id=%d' % post.id)# 把id传到read
+    else:
+        post_id = int(request.GET.get('post_id'))
+        post = Post.objects.get(pk=post_id)
+        return render(request, 'edit_post.html', {'post':post})
 
 
 def read_post(request):
@@ -25,6 +37,7 @@ def read_post(request):
 
 
 def delete_post(request):
+
     return render(request, 'delete_post.html', {})
 
 
