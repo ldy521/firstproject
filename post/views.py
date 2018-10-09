@@ -25,7 +25,7 @@ def edit_post(request):
     else:
         post_id = int(request.GET.get('post_id'))
         post = Post.objects.get(pk=post_id)
-        return render(request, 'edit_post.html', {'post':post})
+        return render(request, 'edit_post.html', {'post': post})
 
 
 def read_post(request):
@@ -33,16 +33,19 @@ def read_post(request):
     post_id = int(request.GET.get('post_id'))
     # 拿到库中的对象id
     post = Post.objects.get(pk=post_id)
-    return render(request, 'read_post.html', {'post':post})
+    return render(request, 'read_post.html', {'post': post})
 
 
 def delete_post(request):
-
-    return render(request, 'delete_post.html', {})
+    post_id = int(request.GET.get('post_id'))
+    post = Post.objects.get(pk=post_id).delete()
+    return redirect('/')
 
 
 def post_list(request):
-    return render(request, 'post_list.html', {})
+    # 拿到全部
+    posts = Post.objects.all()
+    return render(request, 'post_list.html', {'posts': posts})
 
 
 def search(request):
