@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from post.models import Post
+from math import ceil
+
 # Create your views here.
 def create_post(request):
     if request.method == 'POST':
@@ -43,9 +45,16 @@ def delete_post(request):
 
 
 def post_list(request):
+    page = int(request.GET.get('page', 1))  # 当前页码
+    total = Post.objects.count()         # 文章总数
+    per_page = 10                        # 每页帖子数
+    pages = ceil(total / per_page)       # 总页数
+
+    start = (page - 1) * per_page        # 当前页开始的索引
+    end = start + per_page               # 当前页结束的索引
     # 拿到全部
-    posts = Post.objects.all()
-    return render(request, 'post_list.html', {'posts': posts})
+    posts = Post.objects.all()[start:end]
+    return render(request, 'post_list.html', {'posts': posts, 'pages': range(pages)})
 
 
 def search(request):
