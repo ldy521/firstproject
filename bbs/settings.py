@@ -39,8 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.staticfiles',
-
+    # 自定义模块
     'post',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,8 @@ STATIC_URL = '/statics/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "statics"),
 ]
+
+
+# 上传图片
+MEDIA_ROOT = 'medias'
+MEDIA_URL = '/medias/'
